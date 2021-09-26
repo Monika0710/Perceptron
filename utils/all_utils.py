@@ -7,6 +7,15 @@ plt.style.use("fivethirtyeight")
 import  os
 
 def prepare_data(df):
+  """Function to prepare data 
+
+  Args:
+      df (pd.dataFrame): It is pandas dataframe
+
+  Returns:
+      tuple: It returns tuples for dependent & independent Variable
+  """
+  
   X = df.drop("y", axis=1)
 
   y = df["y"]
